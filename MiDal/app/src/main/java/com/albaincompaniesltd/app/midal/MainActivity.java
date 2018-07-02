@@ -75,9 +75,12 @@ public class MainActivity extends AppCompatActivity {
 
                 String plateNo = txtdisplay.getText().toString().trim();
 
+                Bundle b = new Bundle();
+                b.putString("PlateNumber", plateNo);
                 Intent intent = new Intent(MainActivity.this, ReportActivity.class);
+                intent.putExtras(b);
                 startActivity(intent);
-                intent.putExtra("PlateNumber", plateNo);
+
 
 
             }

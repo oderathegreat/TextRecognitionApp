@@ -18,7 +18,7 @@ public class ReportActivity extends AppCompatActivity {
 
         TextView displayPlateNumber;
         Bundle intent = getIntent().getExtras();
-       String display = getIntent().getStringExtra("PlateNumber");
+        String display = intent.getString("PlateNumber");
         displayPlateNumber = findViewById(R.id.plateDisplay);
        displayPlateNumber.setText(display);
 
