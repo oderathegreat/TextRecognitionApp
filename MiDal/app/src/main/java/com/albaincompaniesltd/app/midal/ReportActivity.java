@@ -9,9 +9,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.RequestParams;
+import com.loopj.android.http.TextHttpResponseHandler;
+
+import cz.msebera.android.httpclient.Header;
 
 public class ReportActivity extends AppCompatActivity {
 
@@ -55,7 +59,8 @@ public class ReportActivity extends AppCompatActivity {
            public void onClick(View v) {
                //after submitiing data send it to the dashboard
 
-
+           //url to post data and link endpoint
+               String url = "";
 
                String ID = idnumber.getText().toString().trim();
                String fNames = fullnames.getText().toString().trim();
@@ -75,6 +80,22 @@ public class ReportActivity extends AppCompatActivity {
 
                dialog.show();
 
+        httpClient.post(url, params, new TextHttpResponseHandler() {
+            @Override
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                //Toast a message if opaerations fail
+                Toast.makeText(ReportActivity.this, "OOPS! Sorry failed to connect", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, String responseString) {
+
+                //upon success execute code
+
+                Toast.makeText(ReportActivity.this, "SUCCESS! Data posted ", Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
 
 
