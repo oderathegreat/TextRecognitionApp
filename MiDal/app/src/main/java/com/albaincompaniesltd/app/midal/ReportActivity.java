@@ -1,5 +1,6 @@
 package com.albaincompaniesltd.app.midal;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,11 +10,14 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.RequestParams;
+
 public class ReportActivity extends AppCompatActivity {
 
     EditText idnumber,fullnames,paxCar,pNumber,officevisiting;
     Button sendData;
-    ProgressBar progressBar;
+    ProgressDialog dialog;
 
 
 
@@ -36,6 +40,11 @@ public class ReportActivity extends AppCompatActivity {
        paxCar = findViewById(R.id.edtPaxNumber);
        pNumber = findViewById(R.id.edtPhone);
        officevisiting = findViewById(R.id.edtOffice);
+       dialog = new ProgressDialog(this);
+       dialog.setMessage("Submitting Data........");
+
+
+
 
 
 
@@ -55,6 +64,19 @@ public class ReportActivity extends AppCompatActivity {
                String visiting = officevisiting.getText().toString().trim();
 
                //Start async task operations
+
+               AsyncHttpClient httpClient = new AsyncHttpClient();
+               RequestParams params = new RequestParams();
+               params.put("id", ID );
+               params.put("fullnames", fNames);
+               params.put("passengersboard", passengers);
+               params.put("phonenumber", phoneNumber);
+               params.put("officevisting", visiting);
+
+               dialog.show();
+
+
+
 
 
            }
