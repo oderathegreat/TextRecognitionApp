@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#4dd1b2"
+    android:background="#4dc9f2"
     android:layout_height="match_parent"
     tools:context="com.albaincompaniesltd.app.midal.ReportActivity">
 
@@ -17,4 +17,81 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="57dp" />
+
+    <EditText
+        android:id="@+id/edtIDnumber"
+        android:layout_width="320dp"
+        android:hint="Enter ID Number"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/plateDisplay"
+        android:layout_below="@+id/plateDisplay"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtfullnames"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtIDnumber"
+        android:layout_below="@+id/edtIDnumber"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Enter Full names"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/edtPaxNumber"
+        android:layout_width="320dp"
+        android:hint="Number Of Passengers on Board"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtfullnames"
+        android:layout_below="@+id/edtfullnames"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="320dp"
+        android:hint="Enter Phone Number"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtPaxNumber"
+        android:layout_below="@+id/edtPaxNumber"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtOffice"
+        android:layout_width="320dp"
+        android:hint="Name Of the Office"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtPhone"
+        android:layout_below="@+id/edtPhone"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="320dp"
+        android:textColor="#FFF"
+        android:background="#0f3a5c"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/edtOffice"
+        android:layout_marginBottom="14dp"
+        android:text="Submit Data" />
 </RelativeLayout>
