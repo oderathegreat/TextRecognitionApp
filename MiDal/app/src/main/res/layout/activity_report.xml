@@ -21,15 +21,15 @@
     <EditText
         android:id="@+id/edtIDnumber"
         android:layout_width="320dp"
-        android:hint="Enter ID Number"
-        android:textColorHint="#fff"
-        android:textColor="#fff"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/plateDisplay"
         android:layout_below="@+id/plateDisplay"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="19dp"
         android:ems="10"
-        android:inputType="phone" />
+        android:hint="Enter ID Number"
+        android:inputType="phone"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
 
     <EditText
         android:id="@+id/edtfullnames"
@@ -87,11 +87,22 @@
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="320dp"
-        android:textColor="#FFF"
-        android:background="#0f3a5c"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/edtOffice"
-        android:layout_marginBottom="14dp"
-        android:text="Submit Data" />
+        android:layout_below="@+id/edtOffice"
+        android:layout_marginTop="12dp"
+        android:background="#0f3a5c"
+        android:text="Submit Data"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/submitAnother"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnSubmit"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_marginTop="13dp"
+        android:background="#0f3a5c"
+        android:text="Submit Another"
+        android:textColor="#FFF" />
 </RelativeLayout>

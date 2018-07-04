@@ -20,7 +20,7 @@ import cz.msebera.android.httpclient.Header;
 public class ReportActivity extends AppCompatActivity {
 
     EditText idnumber,fullnames,paxCar,pNumber,officevisiting;
-    Button sendData;
+    Button sendData, another;
     ProgressDialog dialog;
 
 
@@ -38,6 +38,7 @@ public class ReportActivity extends AppCompatActivity {
         String display = intent.getString("PlateNumber");
         displayPlateNumber = findViewById(R.id.plateDisplay);
        displayPlateNumber.setText(display);
+       another = findViewById(R.id.submitAnother);
        sendData = findViewById(R.id.btnSubmit);
        idnumber = findViewById(R.id.edtIDnumber);
        fullnames = findViewById(R.id.edtfullnames);
@@ -46,6 +47,16 @@ public class ReportActivity extends AppCompatActivity {
        officevisiting = findViewById(R.id.edtOffice);
        dialog = new ProgressDialog(this);
        dialog.setMessage("Submitting Data........");
+
+       another.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               //go to camera page
+
+               Intent intent = new Intent(ReportActivity.this, MainActivity.class);
+               startActivity(intent);
+           }
+       });
 
 
        sendData.setOnClickListener(new View.OnClickListener() {
