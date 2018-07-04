@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/home"
+    android:layout_height="match_parent"
+    tools:context="com.albaincompaniesltd.application.thetruemeaningofislam.org.albaincompaniesltd.application.thetruemeaningofislam.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:text="The True Meaning Of Islam"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="This app was created to teach people on the basic principles of Islam and to teach people what the Muslims do and how the religion has been misinterpreted."
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnstart"
+        android:onClick="startlesson"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="17dp"
+        android:background="#EF9D0A"
+        android:text="LETS LEARN"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnIntro"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnstart"
+        android:layout_below="@+id/btnstart"
+        android:layout_marginTop="5dp"
+        android:background="#EF9D0A"
+        android:text="LISTEN TO TEACHING"
+        android:textColor="#fff" />
+</RelativeLayout>

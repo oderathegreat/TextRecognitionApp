@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home"
+    tools:context="com.albaincompaniesltd.application.thetruemeaningofislam.org.albaincompaniesltd.application.thetruemeaningofislam.PillarsActivity">
+
+    <TextView
+        android:id="@+id/txtjihad"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text=" What does the Quran say about enforcing your beliefs on others?"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="150dp" />
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="The Quran clearly tells us that it is our duty to spread the message of Islam, but nowhere does it say you have to force people into religion.
+
+The Quran says, The delivery of the message is the duty for you, and the judgement is the duty for us.13:40 {Ar- Ra'd- the thunder}
+
+This verse explains that only God can judge us, he created us and he knows what is in our hearts it is not up to any terrorist group to make the judgement on anyone, nowhere in the Quran does it give permission to kill those who do not believe in the message.
+
+Infact the Quran says deal gently with disbelievers and give them enough time to change their mind. 86:17. {Surat Tariq}
+
+There shall be no compulsion in [acceptance of] the religion. The right course has become clear from the wrong. So whoever disbelieves in Satan and believes in God has grasped the most trustworthy handhold with no break in it. And Allah is all Hearing and all Knowing.  2:256 { Surat Baqrah}
+
+If you look at the Quran in detail and the religion of Islam you will then realize we are asked to forgive more than seek violence because my Islam is a religion of peace and acceptance. We may be different and may have different cultures, but we appreciate each other for who we are and where we come from. We should be tolerant and work co-operatively and accept others.
+
+
+"
+            android:textColor="#fff"
+            android:maxLines="9"
+            android:minLines="1"
+            android:ellipsize="end"
+            android:scrollbars="vertical"
+            />
+
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="#EA8B0F"
+        android:gravity="center"
+        android:onClick="FromFaith"
+        android:text="Back to Home"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnEnforcing"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#EA8B0F"
+        android:gravity="center"
+        android:onClick="faithListen"
+        android:text="Listen to Lesson"
+        android:textColor="#fff" />
+
+
+</LinearLayout>

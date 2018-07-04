@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home"
+    tools:context="com.albaincompaniesltd.application.thetruemeaningofislam.org.albaincompaniesltd.application.thetruemeaningofislam.PillarsActivity">
+
+    <TextView
+        android:id="@+id/txtjihad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="What Is Islam"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="150dp" />
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="The word Islam means voluntary submission or surrender to the will of God. It comes from the root word Salaam meaning Peace.
+
+In the Quran God defines that the only purpose he created mankind was to worship him.\n\n
+In Islam mankind has a responsibility to either obey or disobey God. The choices that we make in this life will impact on us in the next life.
+
+Islam is a natural way of life that encourages one to have a good   relationship with God and his creation.
+Islam teaches that it is through good deeds that we find true happiness and peace.
+"
+            android:textColor="#fff"
+            android:maxLines="10"
+            android:minLines="1"
+            android:ellipsize="end"
+            android:scrollbars="vertical"
+            />
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/nextWhatisIslamBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="#EA8B0F"
+        android:gravity="center"
+        android:text="Next Lesson"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/ListenToTeachingIslam"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#EA8B0F"
+        android:gravity="center"
+        android:text="Listen to Lesson"
+        android:textColor="#fff" />
+
+
+</LinearLayout>

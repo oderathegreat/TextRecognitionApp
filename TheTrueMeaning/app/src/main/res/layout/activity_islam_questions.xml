@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context="com.albaincompaniesltd.application.thetruemeaningofislam.org.albaincompaniesltd.application.thetruemeaningofislam.IslamQuestionsActivity">
+
+    <TextView
+        android:id="@+id/txtIslam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="53dp"
+        android:text="What Is Islam?"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lessontwoGoodMuslim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goodislamclick"
+        android:layout_alignStart="@+id/txtIslam"
+        android:layout_below="@+id/txtIslam"
+        android:layout_marginTop="25dp"
+        android:text="What makes a good Muslim?"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pillarsislam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lessontwoGoodMuslim"
+        android:layout_below="@+id/lessontwoGoodMuslim"
+        android:layout_marginTop="30dp"
+        android:text="What are the pillars of Islam?"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pillarsfaith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pillarsislam"
+        android:layout_below="@+id/pillarsislam"
+        android:layout_marginTop="30dp"
+        android:text="What are the pillars of faith ?"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/jihadtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pillarsfaith"
+        android:layout_below="@+id/pillarsfaith"
+        android:layout_marginTop="26dp"
+        android:text="What is Jihad?"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/beliefBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/jihadtxt"
+        android:layout_below="@+id/jihadtxt"
+        android:layout_marginTop="16dp"
+        android:text="What does the Quran say about enforcing your beliefs on others?"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

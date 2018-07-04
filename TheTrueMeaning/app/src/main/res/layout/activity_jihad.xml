@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home"
+    tools:context="com.albaincompaniesltd.application.thetruemeaningofislam.org.albaincompaniesltd.application.thetruemeaningofislam.PillarsActivity">
+
+    <TextView
+        android:id="@+id/txtjihad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="What Is Jihad?"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="150dp" />
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="The Arabic word Jihad is often translated as holy war, but the word Jihad means the spiritual struggle within oneself against sin which is always striving to be on the right path.The four forms of Jihad.\n\n
+
+Dawa- invitation to Islam therefore you may invite non-Muslims to learn about Islamic culture and people.\n\n
+The second form of Jihad is education- you may educate people on the principals and five pillars of Islam and the six pillars of faith.
+
+The third form of Jihad is taxes- you pay taxes for your protection and safety (Jizya – Surat Taubah verse 29 Holy Quran.\n\n
+The fourth form of Jihad is Military War known as holy war. You have the right to protect your family or community from the threats of others.\n\n
+Islam only allows war only if there is no alternative to peace. Islam allows the use of force, but there are strict rules that are to be followed if force is to be used. Military war can only take place on a battle field, you cannot hurt women, children, the disabled and you may not even cut down trees. You cannot attack places of worship, hospitals and schools.
+
+This is the form of Jihad that is mostly used by the terrorist groups even though it is the most discouraged in Islam. It is the cause of the biggest global problem in humanity. If you look at the rules of Jihad and what the terrorists do it has nothing to do with Islam.\n\n
+"
+            android:textColor="#fff"
+            android:maxLines="10"
+            android:minLines="1"
+            android:ellipsize="end"
+            android:scrollbars="vertical"
+            />
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnJihadNextLesson"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="#EA8B0F"
+        android:gravity="center"
+        android:text="Next Lesson"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnListenJihad"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#EA8B0F"
+        android:gravity="center"
+        android:text="Listen to Lesson"
+        android:textColor="#fff" />
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#73d3d9"
+    android:layout_height="match_parent"
+    tools:context="com.valentishealth.app.cosmos.MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter username"
+        android:textSize="16sp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:id="@+id/edtphone"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:textSize="16sp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_alignStart="@+id/edtname"
+        android:layout_below="@+id/edtname"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnproceed"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtphone"
+        android:layout_below="@+id/edtphone"
+        android:background="#0b4448"
+        android:text="Let's Proceed"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/txtdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtname"
+        android:layout_alignStart="@+id/edtname"
+        android:layout_marginTop="20dp"
+        android:text="Latest vouchers and coupons, you won't find these deals anywhere."
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
