@@ -48,19 +48,13 @@ public class ReportActivity extends AppCompatActivity {
        dialog.setMessage("Submitting Data........");
 
 
-
-
-
-
-
-
        sendData.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                //after submitiing data send it to the dashboard
 
            //url to post data and link endpoint
-               String url = "";
+               String url = "http://jistymarketer.com/smartpark/Request.php";
 
                String ID = idnumber.getText().toString().trim();
                String fNames = fullnames.getText().toString().trim();
@@ -85,6 +79,7 @@ public class ReportActivity extends AppCompatActivity {
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                 //Toast a message if opaerations fail
                 Toast.makeText(ReportActivity.this, "OOPS! Sorry failed to connect", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
             }
 
             @Override
@@ -93,6 +88,8 @@ public class ReportActivity extends AppCompatActivity {
                 //upon success execute code
 
                 Toast.makeText(ReportActivity.this, "SUCCESS! Data posted ", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
+
 
             }
         });
